@@ -10,9 +10,17 @@
 <body>
   <div class="app">
     <span>Seleccionar un color:</span>
-    <input type="text" placeholder="#FFOOOO">
+    <input type="text" id="color" placeholder="#FFOOOO">
   </div>
   <script>
+    const pepito = document.querySelector('#color')
+    console.log(pepito)
+
+    pepito.addEventListener('input', function(event) {
+        // console.log(event.target.value)
+        document.body.style.backgroundColor = event.target.value 
+
+    } )
 
   </script>
 </body>
